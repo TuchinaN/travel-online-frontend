@@ -24,13 +24,13 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='/api/' element={<MainPage />} />
-        <Route path='api/posts' element={<PostsPage />} />
-        <Route path='/api/:id' element={<PostPage />} />
-        <Route path='/api/:id/edit' element={<EditPostPage />} />
-        <Route path='/api/new' element={<AddPostPage />} />
-        <Route path='/api/register' element={<RegisterPage />} />
-        <Route path='/api/login' element={<LoginPage />} />
+        <Route path='/' element={<MainPage />} />
+        <Route path='/posts' element={<PostsPage />} />
+        <Route path='/:id' element={<PostPage />} />
+        <Route path='/:id/edit' element={<EditPostPage />} />
+        <Route path='/new' element={<AddPostPage />} />
+        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Routes>
 
       <ToastContainer position='bottom-right' />
