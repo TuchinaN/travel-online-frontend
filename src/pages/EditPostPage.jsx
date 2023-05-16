@@ -81,7 +81,7 @@ const options = React.useMemo(() => ({
         />
       </label>
       <div className='flex object-cover py-2'>
-        {oldImage && ( <img src={`${process.env.REACT_APP_API_URL}${oldImage}`} alt={oldImage.name} />)}
+        {oldImage && ( <img src={`${process.env.REACT_APP_URL}${oldImage}`} alt={oldImage.name} />)}
         {newImage && ( <img src={URL.createObjectURL(newImage)} alt={newImage.name} />)}
       </div>
       <label className='text-base text-blue-950 opacity-80 font-bold'>
